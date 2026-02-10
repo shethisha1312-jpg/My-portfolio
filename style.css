@@ -164,11 +164,12 @@
   .home-img .img-box::after{
     animation-delay: -5s;
   }
-  @keyframes rotate{
+   @keyframes rotate{
     100%{
       transform: rotate(360deg);
-    }
-  }
+    } 
+   }
+  
    .home-img .img-box .img-item{
     position: relative;
     width: 100%;
@@ -191,4 +192,149 @@
     mix-blend-mode: lighten;
   }
 
-  
+  /* ===== ABOUT SECTION ===== */
+
+.about{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 120px;
+padding: 100px 9%;
+color: #fff;
+background: #1f242d;
+
+}
+
+.about-img img{
+width: 350px;
+padding-left: 10px;
+border-radius: 20px;
+border: 3px solid #7cf03d;
+box-shadow: 0 0 20px #7cf03d;
+}
+
+.about-content{
+max-width: 600px;
+}
+
+.heading{
+font-size: 40px;
+margin-bottom: 20px;
+}
+
+.heading span{
+color: #7cf03d;
+}
+
+.about-content h3{
+font-size: 26px;
+margin-bottom: 10px;
+}
+
+.about-content p{
+font-size: 16px;
+margin-bottom: 15px;
+line-height: 1.6;
+}
+
+/* .services{
+background: #1f242d;
+color: #fff;
+padding: 100px 9%;
+text-align: center;
+}
+
+.services-container{
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.services-box{
+flex: 1 1 300px;
+background: #323946;
+padding: 30px 20px;
+border-radius: 20px;
+border: 2px solid transparent;
+transition: .5s;
+}
+
+.services-box:hover{
+border-color: #7cf03d;
+transform: translateY(-10px);
+}
+
+.services-box i{
+font-size: 50px;
+color: #7cf03d;
+margin-bottom: 15px;
+}
+
+.services-box h3{
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.services-box p{
+font-size: 15px;
+margin-bottom: 20px;
+} */
+
+.services{
+background: #1f242d;
+color: #fff;
+padding: 100px 9%;
+text-align: center;
+}
+
+.services-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 30px;
+margin-top: 40px;
+}
+
+/* Service Box */
+
+.services-box{
+background: #323946;
+padding: 30px 20px;
+border-radius: 20px;
+border: 2px solid transparent;
+transition: .5s;
+}
+
+.services-box:hover{
+border-color: #7cf03d;
+transform: translateY(-10px);
+}
+
+.services-box i{
+font-size: 45px;
+color: #7cf03d;
+margin-bottom: 15px;
+}
+
+.services-box h3{
+font-size: 22px;
+margin-bottom: 10px;
+}
+
+.services-box p{
+font-size: 15px;
+line-height: 1.6;
+}
+/* responsive*/
+@media (max-width: 992px){
+.services-container{
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 600px){
+.services-container{
+grid-template-columns: 1fr;
+}
+}
