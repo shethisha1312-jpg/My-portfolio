@@ -419,7 +419,32 @@ input:focus, textarea:focus{
     cursor: pointer;
 }
 @media (max-width: 768px){
-  .input-box{
+  .home{
     flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 100px 5% 50px;
+  }
+
+  .home-img{
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-img .img-box{
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .home-info{
+    margin-top: 20px;
+  }
+
+  .home-info h1{
+    font-size: 30px;
+  }
+
+  .home-info h2{
+    font-size: 18px;
   }
 }
