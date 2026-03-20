@@ -53,15 +53,12 @@
     color: #7cf03d;
 
   }
-  @media (max-width: 768px){
+ 
   .navbar{
     padding: 15px 5%;
   }
 
-  .navbar ul{
-    display: none; /* mobile ma menu hide */
-  }
-}
+
 
    .home{
     display: flex;
